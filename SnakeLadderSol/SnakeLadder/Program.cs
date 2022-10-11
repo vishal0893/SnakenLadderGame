@@ -10,6 +10,7 @@ class SnL
         UC2.Diceroll();
         UC3.RollnStep();
         UC4.RollnStep1();
+        UC5.RollnStep2();
 
     }
 }
