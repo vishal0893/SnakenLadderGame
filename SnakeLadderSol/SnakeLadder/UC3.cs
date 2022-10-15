@@ -18,17 +18,21 @@ namespace SnakeLadder
             Random random = new Random();
             int Dice = random.Next(1, 7);
             Console.Write("Dice roll: " + Dice + "\n");
+           
             int option = random.Next(0, 3);
             switch (option)
             {
                 case Nomove:
                     Position = Position;
+                    Console.Write("No move\n");
                     break;
                     case Snake:
                     Position -= Dice;
+                    Console.Write("Snake bites\n");
                     break;
                     case Ladder:
                     Position += Dice;
+                    Console.Write("Got Ladder\n");
                     break;
                     default:
                     Position = Position;
